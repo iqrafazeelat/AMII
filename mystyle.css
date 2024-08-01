@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+.formNo{
+    text-align: right;
+}
+
+/*Addmissiom Form portion*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.double-line-border {
+    display: flex;
+    align-items: center;
+    border: 3px double black;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.double-line {
+    flex-grow: 1;
+    height: 6px;
+    background: linear-gradient(black 33%, transparent 33%, transparent 66%, black 66%);
+    background-size: 100% 6px;
+    position: relative;
+    top: -1px; /* Adjust the vertical position of the line */
+}
+
+.form-heading {
+    font-size: 25px;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+.sign{
+    width: 100%;
+}
+.sign1, .sign2{
+    display: inline;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.sign1{
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 700px;
+}
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Apply border to the entire page */
+  .page-border {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    border: 5px solid #707070; /* Border style: 5px width, solid black color */
+    padding: 50px 30px 20px 20px; /* Optional: Add padding inside the border */
+    min-height: 100%; /* Ensure border covers entire viewport height */
+  }
+  
