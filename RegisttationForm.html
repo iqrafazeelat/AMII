@@ -1,0 +1,430 @@
+<!--&nbsp; used for space--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="mystyle.css">
+
+    <style>
+        /*<!-- For applicant name and father name -->*/
+        .name-line {
+            display: flex;
+            align-items: center;
+        }
+        .name-line span {
+            margin-right: 10px;
+        }
+        .name-line .line {
+            flex-grow: 1;
+            border-bottom: 2px solid black;
+        }
+        /*<!-- For applicant cnic and father cnic -->*/
+        .container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            CNIC {
+                white-space: nowrap; /* Prevents the label from wrapping */
+            }
+            table {
+                width: 80%;
+                border-collapse: collapse;
+                margin-left: 10px; /* Space between label and table */
+                flex-grow: 1; /* Ensures table takes up remaining space */
+            }
+            table, td {
+                border: 1px solid black;
+            }
+            td {
+                text-align: center;
+                height: 20px;
+            }
+        }
+         /*<!-- For applicant cnic and father cnic -->*/
+         .container1 {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            CNIC {
+                white-space: nowrap; /* Prevents the label from wrapping */
+            }
+            table {
+                width: 50%;
+                border-collapse: collapse;
+                margin-left: 10px; /* Space between label and table */
+                flex-grow: 1; /* Ensures table takes up remaining space */
+            }
+            table, td {
+                border: 1px solid black;
+            }
+            td {
+                text-align: center;
+                height: 20px;
+            }
+            tr{
+                width: 50;
+            }
+        }
+        
+        
+    </style>
+
+
+</head>
+<body>
+  <div class="page-border">  
+    <img src="logo.jpeg" alt="AMAN MEDICAL INSTITUTE Logo" style="float: left; width: 150px;">  
+    <h1 style="text-align: center;">AMAN MEDICAL INSTITUTE ISLAMABAD</h1>
+    <h2 style="text-align: center;">Department of Nursing</h2>
+    <p style="text-align: center;">Main Fateh Jhang Road Near Benazir Chowk, Tarnol Islamabad</p>
+    <p style="text-align: center;">Ph: 051-2217007, 051-2217022, 051-2217005 Mob: 0336 4467444  Web: www.amiist.edu.pk Email: info@amlisi.edu.pk</p>
+
+    <div class="formNo">
+        <label for="form_number">Form No._________________</label>
+    </div>
+    <div class="container">    
+        <div class="double-line"></div>
+        <div class="double-line-border">
+            <span class="form-heading"><b>Admission Form</b></span>
+        </div>
+        <div class="double-line"></div>
+    </div>
+    <!-- Code to place Student Picture-->
+    <img src="stdpic.jpeg" alt="Student Image" style="float: right; width: 140px; border: 1px solid gray;">
+    <form>       
+        <h3 style="text-decoration: underline; text-decoration-thickness: 2px;">Diploma Program:</h3>
+        <table style="width:27%; border: 1px solid black; border-collapse: collapse;">
+            <tr>
+              <th style="border: 1px solid black; padding: 6px;">Lady Health Visitor (LHV)</th>
+              <th style="border: 1px solid black; padding: 6px;">(Duration: 02 Yrs)</th>
+            </tr>
+        </table>
+          <br>
+          <div class="name-line">
+            <span><b>Applicant's Name:</b></span>
+            <div class="line"></div>
+          </div> 
+          <!-- Table for Applicient's Cnic Input-->
+          <div class="container" >
+            <span id="CNIC"><b>Applicant's CNIC:</b> </span>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>           
+                </tr>
+            </table> 
+        </div> 
+         <br>
+        <div class="name-line">
+            <span><b>Father's Name:</b></span>
+            <div class="line"></div>
+          </div> 
+          <!-- Table for Father's Cnic Input-->
+          <div class="container" >
+            <span id="CNIC"><b>Father's CNIC: </b></span>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                                    
+                </tr>
+            </table> 
+        </div>
+        br
+         <!-- Table for Date of Birth-->
+        <div class="container1" >
+            <span id="CNIC" style="padding-right: 30px;"><b>Date of Birth: </b></span>
+            <table>       
+                <tr>
+                    <caption>(dd-mm-yyyy)</caption>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                                     
+                </tr>
+            </table> 
+            <div style="padding-left: 250px; padding-right: 30px;">   
+                 <!--Code For gender-->
+                <label for="gender"><b>Gender: </b></label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label> </div>
+        </div> 
+        <br><br>
+        <!--Code For Marital Status--> 
+        <label for="status"><b>Marital Status:</b> </label>
+        <input type="radio" id="single" name="status" value="single">
+        <label for="status">Single</label>
+        <input type="radio" id="married" name="status" value="married">
+        <label for="status">Married</label> 
+        <br>   
+        
+        <!-- Caption for the line Present Address-->
+        <span style="display: inline-block; vertical-align: middle;"><b>Present Address:</b></span>
+        <!-- Dotted horizontal line without CSS -->
+        <span style="border-bottom: 1px dotted #000; width: 90%; display: inline-block; vertical-align: middle;"></span>
+        <span style="border-bottom: 1px dotted #000; width: 99%; display: inline-block; vertical-align: middle;"></span>
+
+        <!-- Caption for the line Permenant Address -->
+        <span style="display: inline-block; vertical-align: middle;"><b>Permanent Address: </b></span>
+        <!-- Dotted horizontal line without CSS -->
+        <span style="border-bottom: 1px dotted #000; width: 88%; display: inline-block; vertical-align: middle;"></span>
+    
+        <!-- Caption for District/Agency od domicile -->
+        <span style="display: inline-block; vertical-align: middle;"><b>District/Agency od domicile:</b>  </span>
+        <!-- Dotted horizontal line without CSS -->
+        <span style="border-bottom: 1px dotted #000; width: 24%; display: inline-block; vertical-align: middle;"></span>
+
+        <!-- Caption for Province -->
+        <span style="display: inline-block; vertical-align: middle;"> <b>Province: </b></span>
+        <span style="border-bottom: 1px dotted #000; width: 23%; display: inline-block; vertical-align: middle;"></span>
+
+        <!-- Caption for Nationality -->
+         <span style="display: inline-block; vertical-align: middle;"><b>Nationality:</b></span>
+        <!-- Dotted horizontal line without CSS -->
+         <span style="border-bottom: 1px dotted #000; width: 24%; display: inline-block; vertical-align: middle;"></span> 
+         <br>
+         <!-- Caption for Phone Registration -->
+        <span style="display: inline-block; vertical-align: middle;"><b>PhoneRes: </b> </span>
+        <!-- Dotted horizontal line without CSS -->
+        <span style="border-bottom: 1px dotted #000; width: 28%; display: inline-block; vertical-align: middle;"></span>
+
+        <!-- Caption for Cell -->
+        <span style="display: inline-block; vertical-align: middle;"> <b>Cell:</b> </span>
+        <span style="border-bottom: 1px dotted #000; width: 28%; display: inline-block; vertical-align: middle;"></span>
+
+        <!-- Caption for Email -->
+         <span style="display: inline-block; vertical-align: middle;"><b>Email:</b> </span>
+        <!-- Dotted horizontal line without CSS -->
+         <span style="border-bottom: 1px dotted #000; width: 30%; display: inline-block; vertical-align: middle;"></span> 
+
+        <!-- Caption for Guardian Name -->
+        <span style="display: inline-block; vertical-align: middle;"><b>Gaurdian Name:</b> </span>
+        <!-- Dotted horizontal line without CSS -->
+         <span style="border-bottom: 1px dotted #000; width: 40%; display: inline-block; vertical-align: middle;"></span>
+         <br>
+
+         <!-- Caption for Guardian Profession -->
+        <span style="display: inline-block; vertical-align: middle;"><b>Gaurdian Profession:</b> </span>
+        <!-- Dotted horizontal line without CSS -->
+         <span style="border-bottom: 1px dotted #000; width: 38%; display: inline-block; vertical-align: middle;"></span> 
+
+         <!-- Caption for Guardian Contact No -->
+        <span style="display: inline-block; vertical-align: middle;"><b>Gaurdian Contact No:</b> </span>
+        <!-- Dotted horizontal line without CSS -->
+         <span style="border-bottom: 1px dotted #000; width: 37%; display: inline-block; vertical-align: middle;"></span> 
+
+         <h3 style="text-decoration-line: underline; text-decoration-thickness: 2px;">In case of Emergency, contact(Islamabad)</h3>
+
+        <!-- Caption for  Name-->
+        <span style="display: inline-block; vertical-align: middle;"><b>(1) Name:</b> </span>
+        <!-- Dotted horizontal line without CSS -->
+         <span style="border-bottom: 1px dotted #000; width: 44%; display: inline-block; vertical-align: middle;"></span>
+         <!-- Caption for Address -->
+        <span style="display: inline-block; vertical-align: middle;"><b>Address:</b> </span>
+        <!-- Dotted horizontal line without CSS -->
+         <span style="border-bottom: 1px dotted #000; width: 44%; display: inline-block; vertical-align: middle;"></span><br> 
+         <!-- Caption for Phone Registration -->
+        <span style="display: inline-block; vertical-align: middle;"><b>PhoneRes: </b> </span>
+        <!-- Dotted horizontal line without CSS -->
+        <span style="border-bottom: 1px dotted #000; width: 45%; display: inline-block; vertical-align: middle;"></span>
+        <!-- Caption for Cell -->
+        <span style="display: inline-block; vertical-align: middle;"> <b>Cell:</b> </span>
+        <span style="border-bottom: 1px dotted #000; width: 45%; display: inline-block; vertical-align: middle;"></span>
+        
+         <!-- Caption for  Name-->
+         <span style="display: inline-block; vertical-align: middle;"><b>(2) Name:</b> </span>
+         <!-- Dotted horizontal line without CSS -->
+          <span style="border-bottom: 1px dotted #000; width: 44%; display: inline-block; vertical-align: middle;"></span>
+          <!-- Caption for Address -->
+         <span style="display: inline-block; vertical-align: middle;"><b>Address:</b> </span>
+         <!-- Dotted horizontal line without CSS -->
+          <span style="border-bottom: 1px dotted #000; width: 44%; display: inline-block; vertical-align: middle;"></span><br> 
+          <!-- Caption for Phone Registration -->
+         <span style="display: inline-block; vertical-align: middle;"><b>PhoneRes: </b> </span>
+         <!-- Dotted horizontal line without CSS -->
+         <span style="border-bottom: 1px dotted #000; width: 45%; display: inline-block; vertical-align: middle;"></span>
+         <!-- Caption for Cell -->
+         <span style="display: inline-block; vertical-align: middle;"> <b>Cell:</b> </span>
+         <span style="border-bottom: 1px dotted #000; width: 45%; display: inline-block; vertical-align: middle;"></span> 
+
+        <!--Code For Experience--> 
+        <label for="experience"><b>Do you have any medical experience:</b> </label>
+        <input type="radio" id="experience" name="experience" value="yes">
+        <label for="experience">Yes</label>
+        <input type="radio" id="experience" name="experience" value="no">
+        <label for="experience">No</label> 
+        <br>
+        <!-- Caption for Cell -->
+        <span style="display: inline-block; vertical-align: middle;"> <b>If yes then write down details:</b> </span>
+        <span style="border-bottom: 1px solid #000; width: 83%; display: inline-block; vertical-align: middle;"></span> 
+         
+        <br>
+        <!-- Education Information-->
+        <table style="width: 100%;" border="1px solid black" cellspacing="0" cellpadding="8" align="left" border-collapse="collapse">
+            <caption style= "text-align: left"><b>Educational Information:</b></caption>
+            <tr>
+               <th>S No: </th>
+               <th>Passing Year</th>
+               <th>Name Of Board</th>
+               <th>Exam Name</th>
+               <th>Annual/Supply</th>
+               <th>Marks Obtained</th>
+               <th>Total Marks</th>
+               <th>Exam Roll No</th>
+               <th>%age</th>
+            </tr>
+            <tr>
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>                       
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>                       
+           </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>                       
+            </tr>
+        </table>
+        <br><br><br><br><br><br>
+
+        <h3 style="text-decoration-line: underline; text-decoration-thickness: 2px;">Facilities:</h3>
+        <!--Code For Avail Hostal Facility--> 
+        <label for="Hostal"><b>1: Do you want to avail Hostal Facility:</b> </label>
+        <input type="radio" id="Hostal" name="Hostal" value="yes">
+        <label for="Hostal">Yes</label>
+        <input type="radio" id="Hostal" name="Hostal" value="no">
+        <label for="Hostal">No</label> 
+        <br>
+        <!--Code For Avail Hostal Facility--> 
+        <label for="Transport"><b>2: Do you want to avail Transport Facility:</b> </label>
+        <input type="radio" id="Transport" name="Transport" value="yes">
+        <label for="Transport">Yes</label>
+        <input type="radio" id="Transport" name="Transport" value="no">
+        <label for="Transport">No</label> 
+        <br>
+        <!--Code For criminal proceeding--> 
+        <label for="account"><b>3: Were you ever convicted in criminal proceedings in a Court of Law? If yes, attach a brief account.</b> </label>
+        <input type="radio" id="account" name="account" value="no">
+        <label for="account">No</label><br> 
+        <label for=""><b>Certified that the facts produced are correct to the best of my knowledge.</b> </label>
+        
+    <!-- Declaration-->
+        <h3 style="text-decoration-line: underline; text-decoration-thickness: 2px;">Declaration:</h3>
+        <p><b>I______________________hereby declare that all the above mentioned information are correct up to best of my kmowledge. <br>
+        If anything was found incorrect, I will be responsible and will accept any decision/penalty of the institute authority.</b></p>
+         <br><br>
+        <!--Signaturer-->
+      <div class="sign">
+          <span class="sign1" style="text-decoration-line: overline; text-decoration-thickness: 2px; "><b>Father/ Guardian signature</b></span>
+          <span class="sign2" style="text-decoration-line: overline; text-decoration-thickness: 2px;"><b> Applicant Signature</b></span>
+      </div>
+    
+  <!--Code for Horizental line-->
+    <hr style="height: 2px; margin: 20px 0; background-color: black;">
+
+    <h3 style="text-decoration-line: underline; text-decoration-thickness: 2px; text-align:center">For Office Use Only</h3>
+
+    <!-- Admission Committee Remarks-->
+    <table style="width: 100%;" border="1px solid black" cellspacing="0" cellpadding="8" align="left" border-collapse="collapse">
+
+    <!-- <table style="width: 1300px; height: 150px; margin: 50px auto; border: 1px solid black;" border-collapse="collapse"> -->
+       <caption style= "text-align: left"><b>Admission Committee Remarks:</b></caption>
+          <tr><td style="border: 1px solid black; "></td></tr>
+          <tr><td style="border: 1px solid black;"></td></tr>
+          <tr><td style="border: 1px solid black;"></td></tr>
+          <tr><td style="border: 1px solid black;"></td></tr>
+  
+    </table>
+    <br><br><br><br><br><br>
+    <hr style="height: 2px; margin: 20px 0; background-color: black;">
+<!--Instructoin-->
+    <h4 style="text-decoration-line: underline; text-decoration-thickness: 2px;">INSTRUCTIONS FOR APPLICANTS</h4>
+     <p><b>Attach attested photocopies of the following documents with the application form in the following sequence.</b></p>
+     <p><b>Tick(✔) in the relevant box for the attached documents.</b></p>
+
+     <input type="checkbox" id="Challan" name="Challan" value="Bank Challan">
+     <label for="Challan"> Copy of Bank Challan Receipt.	</label><br>
+
+     <input type="checkbox" id="certificates" name="certificates" value="certificates">
+     <label for="certificates"> Two copies of all Academic certificates.</label><br>
+
+     <input type="checkbox" id="equivalency" name="equivalency" value="equivalency">
+     <label for="equivalency"> An equivalency certificate, if the qualifying certificate is from a foreign country.</label><br>
+     
+     <input type="checkbox" id="IdCard" name="IdCard" value="Identity Card">
+     <label for="IdCard"> A copy of Computerized National Identity Card of applicant's father or Guardian.	</label><br>
+
+     <input type="checkbox" id="stamppaper" name="stamppaper" value="stamp paper">
+     <label for="stamppaper"> Undertaking on judicial stamp paper of Rs. 100/- duly attested by Notary Public/ Political Agent as per specimen given.</label><br>
+
+     <input type="checkbox" id="NOC" name="NOC" value="NOC">
+     <label for="NOC">Migration certificate should be provided before the start of classes.</label><br>
+        
+    <p> Government employee should provide NOC on the time of admission.</p>
+    <h4>Fee is Non-Refundable</h4>
+    <h3><span style="text-decoration-line: underline;">Note:</span> Outstation candidates should send Rs 1000/- through bank draft in favor of " AMAN Medical Institute Islamabad " along with Application form and relevant documents.</h3>
+    </form>
+ </div>
+</body>
+</html>
